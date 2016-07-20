@@ -1,0 +1,17 @@
+入力： {a, b, c}*
+{ a^n b^n c^n | n≧1 } なる系列を受理する．
+
+q0,q1,a,AL,-
+q0,reject,b,b,-
+q0,reject,c,c,-
+q1,q2,b,B,R
+q1,reject,c,c,R
+q1,reject,_,_,R
+q2,q3,c,C,R
+q2,reject,a,a,R
+q2,reject,_,_,R
+q3,q4,AL,AL,L
+q4,q1,a,A,R
+q4,reject,b,b,R
+q4,reject,c,c,R
+q4,accept,_,_,R

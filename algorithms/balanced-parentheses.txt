@@ -1,0 +1,16 @@
+入力： { (, ) }* の系列
+括弧の対応が正しい系列を受理する．
+
+q0,q1,(,(l,-
+q1,q2,),X,R
+q1,q1,(,(,R
+q1,q1,X,X,R
+q1,q3,_,_,R
+q2,q1,(,X,L
+q2,q1,(l,Xl,L
+q2,q2,X,X,L
+q2,reject,Xl,-,L
+q3,reject,(,-,L
+q3,reject,(l,-,L
+q3,q3,X,X,L
+q3,accept,Xl,-,L

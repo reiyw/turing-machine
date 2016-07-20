@@ -1,0 +1,22 @@
+入力： a^(i)b^(j)
+出力： a^(i×j)
+
+入力例： a,a,a,a,b,b
+出力例： c,c,c,c,c,c
+
+q0,q2,a,AL,-
+q1,q2,a,A,R
+q1,q8,c,b,R
+q2,q3,b,B,R
+q2,q5,c,c,R
+q3,q4,_,c,R
+q4,q2,AL,AL,L
+q5,q1,AL,AL,L
+q5,q5,B,b,L
+q6,q7,AL,AL,L
+q7,q8,A,c,R
+q7,q8,b,c,R
+q8,q6,c,b,R
+q8,q9,_,_,R
+q9,q9,b,_,L
+q9,accept,AL,c,L

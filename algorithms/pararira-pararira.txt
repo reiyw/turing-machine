@@ -1,0 +1,33 @@
+入力： {a, b}*
+{ ww | w∈{a, b}* } なる系列を受理する．
+
+q0,q1,a,AL,-
+q0,q1,b,BL,-
+q1,q2,_,_,R
+q2,q3,a,Ar,L
+q2,q3,b,Br,L
+q3,q4,AL,AL,L
+q3,q4,BL,BL,L
+q4,q5,a,Al,R
+q4,q5,b,Bl,R
+q4,q7,_,_,R
+q5,q6,Ar,Ar,R
+q5,q6,Br,Br,R
+q6,q3,a,Ar,L
+q6,q3,b,Br,L
+q6,reject,AL,AL,L
+q7,q8,AL,AL,L
+q7,q9,BL,BL,L
+q8,q10,Ar,AR,R
+q8,reject,Br,Br,R
+q9,q10,Br,BR,R
+q9,reject,Ar,Ar,R
+q10,q11,AL,AL,L
+q10,q11,BL,BL,L
+q11,q12,Al,AL,R
+q11,q13,Bl,BL,R
+q11,accept,_,_,R
+q12,q10,Ar,AR,R
+q12,reject,Br,Br,R
+q13,q10,Br,BR,R
+q13,reject,Ar,Ar,R

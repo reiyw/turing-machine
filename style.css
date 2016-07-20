@@ -1,0 +1,16 @@
+table {
+    border: 1px #AAAAAA solid;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px #AAAAAA solid;
+}
+
+td {
+    text-align: center;
+}
+
+#head {
+    background-color: lightgreen;
+}
